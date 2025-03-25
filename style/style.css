@@ -8,10 +8,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9); /* Oscurece un poco */
     padding: 15px 0;
-    transition: top 0.3s; /* Transición suave al desaparecer */
+    transition: top 0.3s;
+    z-index: 1000; /* Se mantiene encima del contenido */
 }
+
 
 nav ul {
     list-style: none;
@@ -33,4 +35,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f39c12; /* Cambio de color al pasar el mouse */
+}
+section {
+    margin-top: 60px; /* Ajusta según la altura del header */
 }
